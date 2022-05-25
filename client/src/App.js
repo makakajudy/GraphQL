@@ -10,6 +10,7 @@ import {
 //components
 import BookList from './components/BookList';
 import AuthorList from './components/AuthorList';
+import AddBook from './components/AddBook';
 /*nesting a component inside another (<componentName/>)
 in this case the root component*/
 
@@ -25,10 +26,11 @@ function App(){
     return(
       <ApolloProvider client= {client}>
       <div id="main">
+
         <h1>ninja's reading list</h1>
-        <BookList/>
-        
-        <AuthorList/>
+        <BookList/>        
+       <AddBook/>
+       
      </div>
  </ApolloProvider>
 
